@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmployerInscription">
+
+    <ImageView
+        android:id="@+id/rec"
+        android:layout_width="415dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="116dp"
+        android:src="@drawable/redrec"
+        tools:layout_editor_absoluteX="-2dp" />
+
+    <ImageView
+        android:id="@+id/left"
+        android:layout_width="56dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/left"
+        app:layout_constraintEnd_toEndOf="@+id/rec"
+        app:layout_constraintHorizontal_bias="0.022"
+        app:layout_constraintStart_toStartOf="@+id/rec"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/connexion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Inscription"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.365"
+        app:layout_constraintStart_toEndOf="@+id/left"
+        app:layout_constraintTop_toTopOf="@+id/rec" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:hint="Nom de l'entreprise"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rec" />
+
+    <EditText
+        android:id="@+id/prenom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="Nom de l'employeur"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="Numero de telephone"
+        android:inputType="phone"
+        app:layout_constraintTop_toBottomOf="@+id/prenom"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="Mail"
+        app:layout_constraintTop_toBottomOf="@+id/phone"
+        tools:layout_editor_absoluteX="7dp" />
+
+    <EditText
+        android:id="@+id/adress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="Adresse de l'entreprise"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/ville"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="Ville"
+        app:layout_constraintTop_toBottomOf="@+id/adress"
+        tools:layout_editor_absoluteX="9dp" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Ajouter les resaux de votre Entreprise"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.217"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ville" />
+    <EditText
+        android:id="@+id/lien1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="Lien 1"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@+id/text" />
+    <EditText
+        android:id="@+id/lien2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="Lien 2"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@+id/lien1" />
+
+    <Button
+        android:id="@+id/buttonS"
+        android:layout_width="112dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/red"
+        android:text="S'inscrire"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lien2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

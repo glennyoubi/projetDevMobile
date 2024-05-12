@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AskerInscription">
+
+    <ImageView
+        android:id="@+id/rec"
+        android:layout_width="508dp"
+        android:layout_height="72dp"
+        android:src="@drawable/redrec"
+        tools:layout_editor_absoluteX="-9dp"
+        tools:layout_editor_absoluteY="-9dp" />
+
+
+    <ImageView
+        android:id="@+id/left"
+        android:layout_width="56dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/left"
+        app:layout_constraintEnd_toEndOf="@+id/rec"
+        app:layout_constraintHorizontal_bias="0.017"
+        app:layout_constraintStart_toStartOf="@+id/rec"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/connexion"
+        android:layout_width="129dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Inscription"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.365"
+        app:layout_constraintStart_toEndOf="@+id/left"
+        app:layout_constraintTop_toTopOf="@+id/rec" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:hint="Nom "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rec" />
+
+    <EditText
+        android:id="@+id/prenom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Prenom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Mail"
+        app:layout_constraintTop_toBottomOf="@+id/prenom"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/nationality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Nationnalité"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/adress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Ville ou adresse"
+        app:layout_constraintTop_toBottomOf="@id/nationality"
+        tools:layout_editor_absoluteX="6dp" />
+
+    <EditText
+        android:id="@+id/birth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Date de Naissance(JJ/MM/AAAA"
+        android:inputType="date"
+        app:layout_constraintTop_toBottomOf="@+id/adress"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Numero de telephone"
+        android:inputType="phone"
+        app:layout_constraintTop_toBottomOf="@+id/birth"
+        tools:layout_editor_absoluteX="16dp" />
+    <EditText
+        android:id="@+id/comm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Domaines de Competences"
+        app:layout_constraintTop_toBottomOf="@+id/phone" />
+    <EditText
+        android:id="@+id/mdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Mot de passe"
+        app:layout_constraintTop_toBottomOf="@+id/comm" />
+
+    <TextView
+        android:id="@+id/textView_cv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="188dp"
+        android:text="CV (PDF) "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mdp"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button_choisir_cv"
+        android:layout_width="118dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/textView_cv"
+        android:layout_marginTop="8dp"
+        android:background="@color/cardview_light_background"
+        android:text="Ajouter CV"
+        app:layout_constraintEnd_toStartOf="@+id/textView_cv"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mdp" />
+
+    <Button
+        android:id="@+id/inscire"
+        android:layout_width="145dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="28dp"
+        android:text="S'inscrire"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_cv" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

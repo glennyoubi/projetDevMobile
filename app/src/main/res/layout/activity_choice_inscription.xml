@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    tools:context=".ChoiceInscription">
+
+    <ImageView
+        android:id="@+id/rec"
+        android:layout_width="415dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="116dp"
+        android:src="@drawable/blancrec"
+        app:layout_constraintBottom_toTopOf="@+id/apgi"
+        tools:layout_editor_absoluteX="-2dp" />
+
+    <ImageView
+        android:id="@+id/left"
+        android:layout_width="56dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/left"
+        app:layout_constraintEnd_toEndOf="@+id/rec"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="@+id/rec"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/apgi"
+        android:layout_width="296dp"
+        android:layout_height="173dp"
+        android:layout_marginTop="164dp"
+        android:src="@drawable/apgi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/asker"
+        android:layout_width="236dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="172dp"
+        android:background="@android:color/white"
+        android:text="Demandeur d'emploi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apgi" />
+
+    <Button
+        android:id="@+id/employeur"
+        android:layout_width="236dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        android:text="Employeur"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/asker"
+        app:layout_constraintVertical_bias="0.112" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
