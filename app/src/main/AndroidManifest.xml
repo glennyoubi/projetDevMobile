@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -10,22 +12,16 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MyProject"
+        android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
-            android:name=".AskerInscription"
+            android:name=".ShowAllOffresNonRegisterUser"
             android:exported="false" />
         <activity
-            android:name=".EmployerInscription"
+            android:name=".JobSearch"
             android:exported="false" />
         <activity
-            android:name=".Connexion"
-            android:exported="false" />
-        <activity
-            android:name=".ChoiceInscription"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".Accueil"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,6 +29,35 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".DashboardUser"
+            android:exported="false" />
+        <activity
+            android:name=".ShowOffresEmpl"
+            android:exported="false" />
+        <activity
+            android:name=".ShowAllOffres"
+            android:exported="false" />
+        <activity
+            android:name=".AddOffre"
+            android:exported="false" />
+        <activity
+            android:name=".DashboardEmp"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterEmployeur"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false"/>
+
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
